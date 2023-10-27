@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["title"] = "Resume";
+}
+<!-- Main container start-->
+<main class="main-bg bg-dark p-5">
+    <section>
+        <div class="container-xxl my-5 p-5" id="journey">
+
+            <div class="container my-5 justify-content-center">
+                <div class="row g-5 text-center">
+                    <h1>Resume</h1>
+                    <div>
+                        <a class="btn btn-outline-warning" href="~/pdf/gabriel_ramirez.pdf" target="_blank">click here to download the PDF file.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About End -->
+    <!-- Resume Start -->
+    <section class="resume-container justify-content-center mb-5">
+
+        <div class="resume-inner container py-5 text-center mb-5">
+            <img class="resume-img" src="~/img/resumepg1.jpg">
+
+        </div>
+        <div class="resume-inner container py-5 text-center mb-5">
+            <img class="resume-img" src="~/img/resumepg1.jpg">
+
+        </div>
+
+    </section>
+    <!-- Resume End -->
+    <!-- Contact Start -->
+    <section>
+        <div class="container-xxl contact py-5 bg-light">
+            <div class="container">
+                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="fs-5 fw-medium fst-italic text-light">Contact</p>
+                    <h1 class="display-6 text-warning">Get in Touch</h1>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col text-center">
+                            <a href="@Url.Action("Contact","Home")" class="btn btn-outline-secondary contact-bttn  m-auto text-center mb-5 p-2">
+                                Contact Today
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-8">
+                        <div class="row g-5">
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                                <a href="mailto:gabriel.ramirez37@outlook.com" target="_blank">
+                                    <div class="btn-square mx-auto mb-3">
+                                        <i class="fa fa-envelope fa-2x text-white"></i>
+                                    </div>
+                                    Email
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="https://github.com/gdev15" target="_blank">
+                                    <div class="btn-square mx-auto mb-3">
+                                        <i class="fab fa-github fa-2x text-white"></i>
+                                    </div>
+                                    Github
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+                                <a href="https://www.linkedin.com/in/gabriel-ramirez-29b49855/" target="_blank">
+                                    <div class="btn-square mx-auto mb-3">
+                                        <i class="fab fa-linkedin text-light fa-2x"></i>
+                                    </div>
+                                    Linkedin
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!--End contact-->
+</main> <!-- End Main -->
+
+<script>
+    $(document).ready(function(){            
+        //Active Link
+        $('a[name="Resume"]').addClass('active');
+    });
+</script>

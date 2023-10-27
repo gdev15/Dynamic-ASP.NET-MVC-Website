@@ -1,0 +1,204 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Main container start-->
+<main class="main-bg bg-dark p-5">
+    <section>
+        <div class="container-xxl my-5 p-5 justify-content-center" id="journey">
+
+            <div class="container my-5">
+                <div class="row g-5">
+
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="section-title">
+                            <p class="fs-5 fw-medium fst-italic text-primary">My Journey</p>
+                            <h1 class="display-6 text-dark">Full Stack Developer</h1>
+                        </div>
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-4">
+                                <img class="img-fluid bg-white w-50" src="img/profile_pic.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <h5 class="text-primary">Freelance Developer</h5>
+                                <p class="mb-0">I'm an experienced website developer and I enjoy learning new technologies. My journey in development started in 2021.  My business, Web G Designs LLC, is my website design company that started in 2022.</p>
+                            </div>
+                        </div>
+                        <div class="border-top mb-4"></div>
+                        <div class="row g-3">
+                            <div class="col-sm-8">
+                                <h5 class="text-primary">Military Career</h5>
+                                <p class="mb-0">While enlisted in the USAF from 2004-2010, I worked on the A-10 thunderbolt II as an Aircraft Electrical/Environmental Systems Specialist.</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-fluid bg-white w-100" src="img/a10c.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-5">
+                        <div class="row justify-content-center">
+                            <div class="text-center">
+                                <video height="450px" width="100%" autoplay muted>
+                                    <source src="media/highlight_video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center my-5">
+                        <a href="@Url.Action("Resume","Home")" class="btn btn-light rounded-pill py-3 px-5 animated zoomIn">My Resume</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About End -->
+    <!-- Projects Start -->
+    <section>
+        <div class="container-fluid  product py-5 my-5">
+            <div class="container py-5">
+                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="fs-5 fw-medium fst-italic text-danger">My Projects</p>
+                    <h1 class="display-6 text-light">Websites, Games, Graphics, and Photography</h1>
+                </div>
+                <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
+                    <a href="@Url.Action("Portfolio","Home")" class="d-block product-item rounded">
+                        <img src="img/technology_logos.png" alt="coding technologies">
+                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                            <h4 class="text-primary">Coding Websites</h4>
+                            <span class="text-muted">I'm able to develop and design websites using a variety of technologies. HTML, CSS, JavaScript, jQuery, Bootstrap, and ReactJS. Middle-tier logic with C# and ASP.NET, and backend using SQL and ADO.NET.   </span>
+                        </div>
+                    </a>
+                    <a href="@Url.Action("Portfolio","Home")" class="d-block product-item rounded">
+                        <img src="img/website_imgs.png" alt="collage of websites">
+                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                            <h4 class="text-primary">Websites Using Web Builders</h4>
+                            <span class="text-muted">I've worked with different clients and implemented their websites using different website builders such as Shopify, WordPress, Weebly, and GoDaddy</span>
+                        </div>
+                    </a>
+                    <a href="@Url.Action("Portfolio","Home")" class="d-block product-item rounded">
+                        <img src="img/consoleimg.png" alt="console app">
+                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                            <h4 class="text-primary">Dungeon Application</h4>
+                            <span class="text-muted">This is a .NET Core Console Application. The Dungeon application was implemented using foundational concepts of C# that employ OOP principles and design patters. Seamlessly integrated source control via Git, ensuring organized versioning and fostering collaborative potential.</span>
+                        </div>
+
+                    </a>
+                    <a href="@Url.Action("Portfolio","Home")" class="d-block product-item rounded">
+                        <img src="img/graphics.png" alt="graphic design">
+                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                            <h4 class="text-primary">Graphics</h4>
+                            <span class="text-muted">I've worked with clients and businesses providing infographics, business logos, business cards, pamphlets, banners, social media designs, and even GiFs.</span>
+                        </div>
+                    </a>
+                    <a href="@Url.Action("Portfolio","Home")" class="d-block product-item rounded">
+                        <img src="img/photo_collage.png" alt="collage of photosn">
+                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                            <h4 class="text-primary">Photography</h4>
+                            <span class="text-muted">Photography is a hobby of mine, and I have found that it enriches my web design endeavors. During my studies, I took a course in photography where I learned how to use a DSLR camera to capture various types of images. This skill has proven extremely useful when clients need unique images to help encapsulate their brand.</span>
+                        </div>
+                    </a>
+                    <a href="@Url.Action("Portfolio","Home")" class="d-block product-item rounded">
+                        <img src="img/math_app.png" alt="">
+                        <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
+                            <h4 class="text-primary">Math Game App</h4>
+                            <span class="text-muted">Created a secure application to assist in math education. Mission Math is a casual free learning game that is designed to help anyone practice basic math. The application was designed using Unity/C#. Published on Google Play and the App Store.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects End -->
+    <!-- Testimonial Start -->
+    <section>
+        <div class="container-xxl testimonial py-5 my-5 bg-light" id="testimonial">
+            <div class="container py-5">
+                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="fs-5 fw-medium fst-italic text-dark">Testimonial</p>
+                    <h1 class="display-6 text-primary">What my clients say about my work</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="testimonial-item p-4 p-lg-5">
+                        <a href="https://www.google.com/search?q=web+g+designs&oq=web+&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIGCAMQRRg7Mg0IBBAAGIMBGLEDGIAEMg8IBRAuGAoYxwEY0QMYgAQyDQgGEAAYgwEYsQMYgAQyDQgHEC4YgwEYsQMYgAQyDQgIEAAYgwEYsQMYgAQyDQgJEAAYgwEYsQMYgATSAQkxNzk1ajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8&bshm=rimc/1#lrd=0x20c0ff79acfa9f89:0xef2a499359e6fa7f,1,,,," target="_blank">
+                            <p class="mb-4">
+                                "Gabriel and took on the project of updating our existing website with grace and a good attitude. There were a lot of voices in the mix and he was flexible with schedules, opinions and ideas. Importantly, not only did he update the overall look and clean up our site, he spent time creating video tutorials and teaching us how to use and update our website efficiently moving forward. We would highly recommend working with Gabriel!""
+                            </p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="text-start ms-3">
+                                    <h5>~Amber Sperry</h5>
+                                    <span class="text-primary"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="testimonial-item p-4 p-lg-5">
+                        <a href="https://www.google.com/search?q=web+g+designs&oq=web+&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIGCAMQRRg7Mg0IBBAAGIMBGLEDGIAEMg8IBRAuGAoYxwEY0QMYgAQyDQgGEAAYgwEYsQMYgAQyDQgHEC4YgwEYsQMYgAQyDQgIEAAYgwEYsQMYgAQyDQgJEAAYgwEYsQMYgATSAQkxNzk1ajBqMTWoAgCwAgA&sourceid=chrome&ie=UTF-8&bshm=rimc/1#lrd=0x20c0ff79acfa9f89:0xef2a499359e6fa7f,1,,,," target="_blank">
+                            <p class="mb-4">"I asked Gabriel at Web G Designs to create a gif for me to use as a moving logo for a conference I'm organizing.  In about three hours, the work was done.  It looks great!  He made an adjustment for me at no cost, and his price was extremely reasonable."</p>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <div class="text-start ms-3">
+                                    <h5>~Michael Maher</h5>
+                                    <span class="text-primary"></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial End -->
+    <!-- Contact Start -->
+    <section>
+        <div class="container-xxl contact py-5 bg-light">
+            <div class="container">
+                <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="fs-5 fw-medium fst-italic text-light">Contact</p>
+                    <h1 class="display-6 text-warning">Get in Touch</h1>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col text-center">
+                            <a href="@Url.Action("Contact","Home")" class="btn btn-outline-secondary contact-bttn  m-auto text-center mb-5 p-2">
+                                Contact Today
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-8">
+                        <div class="row g-5">
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                                <a href="mailto:gabriel.ramirez37@outlook.com" target="_blank">
+                                    <div class="btn-square mx-auto mb-3">
+                                        <i class="fa fa-envelope fa-2x text-white"></i>
+                                    </div>
+                                    Email
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="https://github.com/gdev15" target="_blank">
+                                    <div class="btn-square mx-auto mb-3">
+                                        <i class="fab fa-github fa-2x text-white"></i>
+                                    </div>
+                                    Github
+                                </a>
+                            </div>
+                            <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+                                <a href="https://www.linkedin.com/in/gabriel-ramirez-29b49855/" target="_blank">
+                                    <div class="btn-square mx-auto mb-3">
+                                        <i class="fab fa-linkedin text-light fa-2x"></i>
+                                    </div>
+                                    Linkedin
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!--End contact-->
+</main> <!-- End Main -->
