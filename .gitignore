@@ -396,5 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/PortfolioWebsite/appsettings.json
 
-\PersonalWebsiteMVC\BackupDynamicWebsite\.gitignore
